@@ -1,4 +1,4 @@
-#api key = fbcdee4455a849be9cec887d8b70d2ed
+
 
 # importing requests package 
 import requests	 
@@ -6,7 +6,7 @@ import requests
 def GetNews(): 
 	
 	# BBC news api 
-	main_url = "http://newsapi.org/v2/everything?q=India&from=2020-08-13&sortBy=publishedAt&apiKey=fbcdee4455a849be9cec887d8b70d2ed"
+	main_url = "http://newsapi.org/v2/everything?q=India&from=2020-08-13&sortBy=publishedAt&apiKey={your api key}"
 
 	# fetching data in json format 
 	open_bbc_page = requests.get(main_url).json() 
